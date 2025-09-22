@@ -45,7 +45,7 @@ for (const call of calls) {
 
             historyItem.appendChild(itemLeft);
 
-     
+
 
             const Ritem = document.createElement("p");
             Ritem.className = "items-center flex justify-center";
@@ -56,14 +56,14 @@ for (const call of calls) {
 
 
             const data = {
-                serviceName:servicename ,
+                serviceName: servicename,
                 serviceNumber: number,
                 date: new Date().toLocaleTimeString()
 
             }
-            
+
             history.push(data);
- 
+
 
 
         } else {
@@ -99,5 +99,17 @@ for (const copy of copies) {
         totalCopy += 1;
         availableCopy.innerText = totalCopy;
 
+        const section = this.closest("section");
+        const number = section.querySelector("h1").innerText;
+
+        navigator.clipboard.writeText(number).then(function () {
+            alert(`Copied number : ` + number);
+        }, function (err) {
+            console.error("Failed to copy" + err);
+
+        });
+
     })
 }
+
+
