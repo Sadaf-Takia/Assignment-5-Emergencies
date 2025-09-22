@@ -29,17 +29,18 @@ for (const call of calls) {
             alert(`Calling ${service} (${number}) ...`);
 
             const historyItem = document.createElement("div");
-            historyItem.className = "bg-amber-200 flex justify-between p-2 mt-2";
+            historyItem.className = "bg-gray-200 rounded-2xl flex justify-between p-2 mt-2";
 
             const itemLeft = document.createElement("div");
             itemLeft.className = "items-center";
 
             const Litem1 = document.createElement("h5");
-            Litem1.className = "text-lg";
+            Litem1.className = "text-black font-bold text-base ";
             Litem1.innerText = servicename;
             itemLeft.appendChild(Litem1);
 
             const Litem2 = document.createElement("h4");
+            Litem2.className = "text-gray-600  text-sm";
             Litem2.innerText = number;
             itemLeft.appendChild(Litem2);
 
@@ -48,7 +49,7 @@ for (const call of calls) {
 
 
             const Ritem = document.createElement("p");
-            Ritem.className = "items-center flex justify-center";
+            Ritem.className = "items-center text-black flex justify-center";
             Ritem.innerText = new Date().toLocaleTimeString();
             historyItem.appendChild(Ritem);
 
