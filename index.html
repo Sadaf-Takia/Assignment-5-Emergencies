@@ -25,7 +25,7 @@
 
             <div class="flex  items-center justify-between gap-2 md:gap-3">
                 <div class="p-6 rounded-full h-12 w-25 bg-[#c3f1ea84] flex items-center ">
-                    <p class="text-black text-sm md:text-lg font-bold items-center ">0</p>
+                    <p id="heart-count" class="text-black text-sm md:text-lg font-bold items-center ">0</p>
                     <img src="assets/heart.png" alt="" class="h-[20px] w-[20px] md:h-[30px] md:w-[30px] ml-2">
                 </div>
                 <div class="rounded-full p-6 h-12 w-25 bg-[#c3f1ea84] flex items-center  ">
@@ -33,7 +33,7 @@
                     <img src="assets/coin.png" alt="" class="h-[20px] w-[20px] md:h-[30px] md:w-[30px] ml-2">
                 </div>
                 <div class="  bg-[#00A63E] md:p-6 p-3 flex items-center justify-center rounded-full h-12 w-25  ">
-                    <p class="text-amber-50 text-sm md:text-lg font-semibold ">0</p>
+                    <p id="copy-count" class="text-amber-50 text-sm md:text-lg font-semibold ">0</p>
                     <h3 class="text-amber-50 md:text-lg text-sm  font-semibold ml-1">Copy </h3>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                             class="rounded-xl h-[40px] w-[40px] p-2 md:h-10 md:w-10 flex justify-center items-center bg-pink-200 ">
                             <img src="assets/emergency.png" alt="">
                         </div>
-                        <button class="btn bg-transparent shadow-none border-none md:btn-xs btn-lg "> <img
+                        <button class="btn btn-heart bg-transparent shadow-none border-none md:btn-xs btn-lg "> <img
                                 class="h-[25px] w-[25px] md:h-[20px] md:w-[20px]" src="assets/heart2.png"
                                 alt=""></button>
                     </div>
@@ -86,7 +86,7 @@
 
                         <div class="flex justify-between mt-4 gap-3 md:gap-2">
                             <button
-                                class="btn bg-transparent shadow-none sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
+                                class="btn btn-copy bg-transparent shadow-none sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
                                 <img class="h-[15px] w-[15px] md:h-[20px] md:w-[20px]  " src="assets/paste.png" alt="">
                                 <p class="text-gray-500 text-lg ">Copy</p>
                             </button>
@@ -104,13 +104,13 @@
 
                 <!---->
                 <!--Police helpline number-->
-                <section class="bg-amber-50 h-[300px]  p-6 rounded-lg shadow-md">
+                <section class="bg-amber-50 min-h-[300px]  p-6 rounded-lg shadow-md">
                     <div class="flex justify-between items-center">
                         <div
                             class="rounded-xl h-[40px] w-[40px] md:h-10 md:w-10 flex justify-center items-center bg-[#DFEFFF] p-2">
                             <img src="assets/police.png" alt="">
                         </div>
-                        <button class="btn bg-transparent shadow-none border-none btn-xs "> <img
+                        <button class="btn btn-heart bg-transparent shadow-none border-none btn-xs "> <img
                                 class="h-[25px] w-[25px] md:h-[20px] md:w-[20px]" src="assets/heart2.png"
                                 alt=""></button>
                     </div>
@@ -129,7 +129,7 @@
 
                         <div class="flex justify-between mt-4 md:gap-2 gap-3">
                             <button
-                                class="btn bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
+                                class="btn btn-copy bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
                                 <img class="h-[15px] w-[15px] md:h-[20px] md:w-[20px]  " src="assets/paste.png" alt="">
                                 <p class="text-gray-500 text-lg ">Copy</p>
                             </button>
@@ -145,13 +145,13 @@
 
 
                 <!--Fire Service number-->
-                <section class="bg-amber-50 h-[300px]  p-6 rounded-lg shadow-md">
+                <section class="bg-amber-50 min-h-[300px]  p-6 rounded-lg shadow-md">
                     <div class="flex justify-between items-center">
                         <div
                             class="rounded-xl h-[40px] w-[40px] md:h-10 md:w-10 flex justify-center items-center bg-pink-200 p-2">
                             <img src="assets/fire-service.png" alt="">
                         </div>
-                        <button class="btn bg-transparent shadow-none border-none btn-xs "> <img
+                        <button class="btn btn-heart bg-transparent shadow-none border-none btn-xs "> <img
                                 class="h-[25px] w-[25px] md:h-[20px] md:w-[20px]" src="assets/heart2.png"
                                 alt=""></button>
                     </div>
@@ -171,7 +171,7 @@
 
                         <div class="flex justify-between mt-4 md:gap-2 gap-3">
                             <button
-                                class="btn bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
+                                class="btn btn-copy bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
                                 <img class="h-[15px] w-[15px] md:h-[20px] md:w-[20px]  " src="assets/paste.png" alt="">
                                 <p class="text-gray-500 text-lg ">Copy</p>
                             </button>
@@ -186,13 +186,13 @@
                 </section>
 
                 <!--Ambulance Service-->
-                <section class="bg-amber-50 h-[300px]  p-6 rounded-lg shadow-md">
+                <section class="bg-amber-50 min-h-[300px]  p-6 rounded-lg shadow-md">
                     <div class="flex justify-between items-center">
                         <div
                             class="rounded-xl h-[40px] w-[40px] md:h-10 md:w-10 flex justify-center items-center bg-pink-200 p-2">
                             <img src="assets/ambulance.png" alt="">
                         </div>
-                        <button class="btn bg-transparent shadow-none border-none btn-xs "> <img
+                        <button class="btn btn-heart bg-transparent shadow-none border-none btn-xs "> <img
                                 class="h-[25px] w-[25px] md:h-[20px] md:w-[20px]" src="assets/heart2.png"
                                 alt=""></button>
                     </div>
@@ -212,7 +212,7 @@
 
                         <div class="flex justify-between mt-4 md:gap-2 gap-3">
                             <button
-                                class="btn bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
+                                class="btn btn-copy bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
                                 <img class="h-[15px] w-[15px] md:h-[20px] md:w-[20px]  " src="assets/paste.png" alt="">
                                 <p class="text-gray-500 text-lg ">Copy</p>
                             </button>
@@ -228,13 +228,13 @@
 
 
                 <!--Women and child helpline-->
-                <section class="bg-amber-50 h-[300px]  p-6 rounded-lg shadow-md">
+                <section class="bg-amber-50 min-h-[300px]  p-6 rounded-lg shadow-md">
                     <div class="flex justify-between items-center">
                         <div
                             class="rounded-xl h-[40px] w-[40px] md:h-10 md:w-10 flex justify-center items-center bg-pink-200 p-2">
                             <img src="assets/emergency.png" alt="">
                         </div>
-                        <button class="btn bg-transparent shadow-none border-none btn-xs "> <img
+                        <button class="btn btn-heart bg-transparent shadow-none border-none btn-xs "> <img
                                 class="h-[25px] w-[25px] md:h-[20px] md:w-[20px]" src="assets/heart2.png"
                                 alt=""></button>
                     </div>
@@ -254,7 +254,7 @@
 
                         <div class="flex justify-between mt-4 md:gap-2 gap-3">
                             <button
-                                class="btn bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
+                                class="btn btn-copy bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
                                 <img class="h-[15px] w-[15px] md:h-[20px] md:w-[20px]  " src="assets/paste.png" alt="">
                                 <p class="text-gray-500 text-lg ">Copy</p>
                             </button>
@@ -270,13 +270,13 @@
 
 
                 <!--Anti corruption helpline-->
-                <section class="bg-amber-50 h-[300px]  p-6 rounded-lg shadow-md">
+                <section class="bg-amber-50 min-h-[300px]  p-6 rounded-lg shadow-md">
                     <div class="flex justify-between items-center">
                         <div
                             class="rounded-xl h-[40px] w-[40px] md:h-10 md:w-10 flex justify-center items-center bg-pink-200 p-2">
                             <img src="assets/emergency.png" alt="">
                         </div>
-                        <button class="btn bg-transparent shadow-none border-none btn-xs "> <img
+                        <button class="btn btn-heart bg-transparent shadow-none border-none btn-xs "> <img
                                 class="h-[25px] w-[25px] md:h-[20px] md:w-[20px]" src="assets/heart2.png"
                                 alt=""></button>
                     </div>
@@ -296,7 +296,7 @@
 
                         <div class="flex justify-between mt-4 md:gap-2 gap-3">
                             <button
-                                class="btn bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
+                                class="btn btn-copy bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
                                 <img class="h-[15px] w-[15px] md:h-[20px] md:w-[20px]  " src="assets/paste.png" alt="">
                                 <p class="text-gray-500 text-lg ">Copy</p>
                             </button>
@@ -312,13 +312,13 @@
 
 
                 <!--Electricity helpline-->
-                <section class="bg-amber-50 h-[300px]  p-6 rounded-lg shadow-md">
+                <section class="bg-amber-50 min-h-[300px]  p-6 rounded-lg shadow-md">
                     <div class="flex justify-between items-center">
                         <div
                             class="rounded-xl h-[40px] w-[40px] md:h-10 md:w-10 flex justify-center items-center bg-pink-200 p-2">
                             <img src="assets/emergency.png" alt="">
                         </div>
-                        <button class="btn bg-transparent shadow-none border-none btn-xs "> <img
+                        <button class="btn btn-heart bg-transparent shadow-none border-none btn-xs "> <img
                                 class="h-[25px] w-[25px] md:h-[20px] md:w-[20px]" src="assets/heart2.png"
                                 alt=""></button>
                     </div>
@@ -338,7 +338,7 @@
 
                         <div class="flex justify-between mt-4 md:gap-2 gap-3">
                             <button
-                                class="btn bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
+                                class="btn btn-copy bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
                                 <img class="h-[15px] w-[15px] md:h-[20px] md:w-[20px]  " src="assets/paste.png" alt="">
                                 <p class="text-gray-500 text-lg ">Copy</p>
                             </button>
@@ -355,13 +355,13 @@
 
 
                 <!--brac helpline-->
-                <section class="bg-amber-50 h-[300px]  p-6 rounded-lg shadow-md">
+                <section class="bg-amber-50 min-h-[300px]  p-6 rounded-lg shadow-md">
                     <div class="flex justify-between items-center">
                         <div
                             class="rounded-xl h-[40px] w-[40px] md:h-10 md:w-10 flex justify-center items-center bg-pink-200 p-2">
                             <img src="assets/emergency.png" alt="">
                         </div>
-                        <button class="btn bg-transparent shadow-none border-none btn-xs "> <img
+                        <button class="btn btn-heart bg-transparent shadow-none border-none btn-xs "> <img
                                 class="h-[25px] w-[25px] md:h-[20px] md:w-[20px]" src="assets/heart2.png"
                                 alt=""></button>
                     </div>
@@ -381,7 +381,7 @@
 
                         <div class="flex justify-between mt-4 gap-2">
                             <button
-                                class="btn bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
+                                class="btn btn-copy bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
                                 <img class="h-[15px] w-[15px] md:h-[20px] md:w-[20px]  " src="assets/paste.png" alt="">
                                 <p class="text-gray-500 text-lg ">Copy</p>
                             </button>
@@ -397,13 +397,13 @@
 
 
                 <!--Bangladesh railway-->
-                <section class="bg-amber-50 h-[300px]  p-6 rounded-lg shadow-md">
+                <section class="bg-amber-50 min-h-[300px]  p-6 rounded-lg shadow-md">
                     <div class="flex justify-between items-center">
                         <div
                             class="rounded-xl h-[40px] w-[40px] md:h-10 md:w-10 flex justify-center items-center bg-pink-200 p-2">
                             <img src="assets/emergency.png" alt="">
                         </div>
-                        <button class="btn bg-transparent shadow-none border-none btn-xs "> <img
+                        <button class="btn btn-heart bg-transparent shadow-none border-none btn-xs "> <img
                                 class="h-[25px] w-[25px] md:h-[20px] md:w-[20px]" src="assets/heart2.png"
                                 alt=""></button>
                     </div>
@@ -423,7 +423,7 @@
 
                         <div class="flex justify-between mt-4 gap-2">
                             <button
-                                class="btn bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
+                                class="btn btn-copy bg-transparent shadow-none  sm:btn-sm md:btn-md flex rounded-xl flex-1  border-b-gray-400 border-1 items-center justify-center">
                                 <img class="h-[15px] w-[15px] md:h-[20px] md:w-[20px]  " src="assets/paste.png" alt="">
                                 <p class="text-gray-500 text-lg ">Copy</p>
                             </button>

@@ -1,5 +1,9 @@
 const available = document.getElementById("available-coin");
 const calls = document.querySelectorAll(".btn-call");
+const copies = document.querySelectorAll(".btn-copy");
+const hearts = document.querySelectorAll(".btn-heart");
+const availableHeart = document.getElementById("heart-count");
+const availableCopy = document.getElementById("copy-count");
 const history = [];
 const callHistory = document.querySelector("#history-container .call-history");
 const clear = document.getElementById("clear");
@@ -74,3 +78,26 @@ clear.addEventListener("click", function (e) {
     e.preventDefault();
     callHistory.innerHTML = "";
 })
+
+
+for (const heart of hearts) {
+    heart.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        let totalHeart = parseInt(availableHeart.innerText);
+        totalHeart += 1;
+        availableHeart.innerText = totalHeart;
+
+    })
+}
+
+for (const copy of copies) {
+    copy.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        let totalCopy = parseInt(availableCopy.innerText);
+        totalCopy += 1;
+        availableCopy.innerText = totalCopy;
+
+    })
+}
