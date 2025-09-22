@@ -1,5 +1,4 @@
 # Assignment-5-Emergencies
-# Assignment-5-Emergencies
 1.
 getElementById: we use it to get the specific element by giving it a unique id...
 getElementsByClassName : we use it to get  those classes which match with the class name...
@@ -24,3 +23,7 @@ its improve perfomance, make the code easy and clean to understand and maintain,
 preventDefault():stops the default behaviour of an element.
 stopPropagation(): stops the event from bubbling up the root of dom.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 82614a8b4136994f05b7c7e09807c30c19e144de
